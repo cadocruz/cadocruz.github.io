@@ -140,6 +140,8 @@ public class SpringSecurityDigestApplication {
 }
 {% endhighlight %}  
 
+Pronto, já temos nossa aplicação rodando com o mínimo de segurança.
+
 ### Spring Security
 
 Diferentemente da autenticação `Basic`, na autenticação `Digest` o Spring Security não provê
@@ -204,7 +206,7 @@ Algumas considerações:
 :	Desabilitamos a proteção contra CSRF (Cross-site Request Forgery) para simplificar o desenvolvimento, 
 mas você pode ler mais sobre proteção CSRF [aqui](http://docs.spring.io/spring-security/site/docs/3.2.5.RELEASE/reference/htmlsingle/#csrf).
 
-No método **_digestEntryPoint()_** configuramos nossa chave privada, o tempo de expiração do nonce em segundos (o valor padrão é 300 segundos) e o nosso realm. Esse são parâmetros obrigatórios.
+No método **_digestEntryPoint()_** configuramos nossa chave privada, o tempo de expiração do nonce em segundos (o valor padrão é 300 segundos) e o nosso realm. Esses são parâmetros obrigatórios.
 
 Vamos agora para nosso `@RestController`, ele não tem nada de mais. Mapeamos nosso controller para /api e nosso método 
 hello como /hello. 
@@ -265,8 +267,7 @@ Agora vamos passar o usuário e senha para nossa aplicação:
 curl -i --digest --user cadocruz:12345678 http://localhost:8080/api/hello
 {% endhighlight %}
 
-A primeira resposta do servidor ainda é **_401 Unauthorized_**, mas o desafio agora é interpretado e enviado em um 
-segundo request, que irá ter sucesso com **_200 OK_**:
+A primeira resposta do servidor ainda é **_401 Unauthorized_**, mas o desafio agora é interpretado e enviado em um segundo request, que irá ter sucesso com **_200 OK_**:
 
 {% highlight bash %}
 HTTP/1.1 401 Unauthorized
@@ -328,8 +329,7 @@ Agora que já temos nosso serviço RESTful funcionando, vamos criar nossa págin
 
 Nada de mais na nossa página, um campo para usuário e outro para senha. O serviço "sujo" deve ser feito por um 
 javascript fazendo requisição por `AJAX`. Nós mesmo podemos criar nosso javascript, mas com certeza alguém já fez.
-Pesquisando "ajax digest auth" no google, o terceiro resultado é do [Marcin Michalski 's Weblog](http://marcin-michalski.pl/2012/11/01/javascript-digest-authentication-restful-webservice-spring-security-javascript-ajax/), pegarei este como 
-exemplo:
+Pesquisando "ajax digest auth" no google, o terceiro resultado é do [Marcin Michalski 's Weblog](http://marcin-michalski.pl/2012/11/01/javascript-digest-authentication-restful-webservice-spring-security-javascript-ajax/), pegarei este como exemplo:
 
 {% highlight javascript %}
 /*
@@ -551,11 +551,11 @@ public class AjaxDigestAuthenticationEntryPoint extends DigestAuthenticationEntr
 }
 {% endhighlight %}
 
-Após muita pesquisa para descobrir a melhor forma de contornar este problema, cheguei a uma solução, alterar o HTTP Authentication Scheme. Quando enviamos o HEADER para o cliente, enviamos o tipo de altenticação (Authentication Scheme) `WWW-Authenticate: Digest`, para que o browser não enviar a caixa de diálogo do login, criaremos nosso próprio Authentication Scheme.
+Após muita pesquisa para descobrir a melhor forma de contornar este problema, cheguei a uma solução, alterar o HTTP Authentication Scheme. Quando enviamos o HEADER para o cliente, enviamos o tipo de autenticação (Authentication Scheme) `WWW-Authenticate: Digest`, para que o browser não mostre a caixa de diálogo do login, criaremos nosso próprio Authentication Scheme.
 
 O que precisamos fazer é estender a classe DigestAuthenticationEntryPoint e criarmos nossa própria implementação do `Digest`. Na verdade usaremos o mesmo código do DigestAuthenticationEntryPoint, mudando apenas o Authentication Scheme de Digest para outro de nossa escolha, usarei `DigestCustom`.
 
-Dei o nome da classe de RestDigestAuthenticationEntryPoint, abaixo como ficou o código:
+Dei o nome da classe de RestDigestAuthenticationEntryPoint, veja abaixo como ficou o código:
 
 {% highlight java %}
 public class RestDigestAuthenticationEntryPoint extends
