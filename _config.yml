@@ -1,0 +1,30 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 20 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: pygments
+markdown: kramdown
+timezone: America/Sao_Paulo
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: 
+
+description: Cado Cruz blog
+author:
+  name: Ricardo Cruz
+  email: ricardo@cadocruz.com.br
+  github: cadocruz
+  twitter: cadocruz
+  bio: Desenvolvedor Java Web e Mobile
+
+rss_path: feed.xml
+categories_path: categorias/
+tags_path: tags/
+
+BASE_PATH: 
+
