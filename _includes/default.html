@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>{{ site.description }}</title>
+
+	<meta name="author" content="{{ site.author.name }}">
+
+	{% if page.description %}
+	<meta name="description" content="{{ page.description }}">
+	{% endif %}
+
+	{% if page.keywords %}
+	<meta name="keywords" content="{{ page.keywords }}" />
+	{% endif %}
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link href="{{ site.BASE_PATH }}/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="/assets/ico/favicon.png">
+	<link rel="apple-touch-icon" href="/assets/ico/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/ico/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/ico/apple-touch-icon-114x114.png">
+
+	<link rel="alternate" type="application/rss+xml" title="{{ site.description }} feed" href="{{ site.BASE_PATH }}/feed.xml">
+</head>
+
+<body>
+	<div class="col-sm-3 sidebar hidden-xs">
+		{% include sidebar.html %}
+	</div>
+	<div class="col-sm-9 col-sm-offset-3">
+		{% if page.navbar %}
+			{% include navbar.html %}
+		{% endif%}
+
+		{{ content }}
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with Jekyll. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
+</body>
+</html>
