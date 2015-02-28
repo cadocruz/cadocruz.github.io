@@ -628,7 +628,7 @@ Também devemos mudar o javascript digest-auth.js, pois o Spring Security não a
 
 Pronto, agora estamos usando todo o poder do Spring Security, com autenticação `Digest`, nos nossos serviços RESTful.
 
-Você pode fazer o download do código fonte [aqui](https://)
+Você pode fazer o download do código fonte [aqui](https://github.com/cadocruz/spring-security-digest)
 
 Fontes:
 :	[RFC2671](http://tools.ietf.org/html/rfc2617)
