@@ -14,7 +14,7 @@
 	{% if site.author.email %}
 	<p>
 		<a href="mailto:{{ site.author.email }}">
-			<i class="fa fa-envelope">&nbsp{{ site.author.email }}</i>
+			<i class="fa fa-envelope">&nbsp;{{ site.author.email }}</i>
 		</a>
 	</p>	
 	{% endif %}
@@ -26,20 +26,20 @@
 		{% if site.author.github %}
 		<li>
 			<a class="btn-sm" href="https://github.com/{{ site.author.github }}">
-				<i class="fa fa-github">&nbspGithub</i>
+				<i class="fa fa-github">&nbsp;Github</i>
 			</a>
 		</li>
 		{% endif %}
 		{% if site.author.twitter %}
 		<li>
 			<a class="btn-sm" href="https://twitter.com/{{ site.author.twitter }}">
-				<i class="fa fa-twitter ">&nbspTwitter</i>
+				<i class="fa fa-twitter ">&nbsp;Twitter</i>
 			</a>
 		</li>
 		{% endif %}
 		<li>
 			<a class="btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
-				<i class="fa fa-rss">&nbspFeed</i>
+				<i class="fa fa-rss">&nbsp;Feed</i>
 			</a>
 		</li>
 	</ul>
