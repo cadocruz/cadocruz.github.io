@@ -485,7 +485,7 @@ jQuery(document).ready(function($) {
 {% endhighlight %}
 
 Para rodarmos a aplicação, simplesmente digitamos `gradle clean build run` no console. 
-Vai aparecer algo semelhando com a saída abaixo:
+Vai aparecer algo semelhante com a saída abaixo:
 
 {% highlight bash %}
 :clean
