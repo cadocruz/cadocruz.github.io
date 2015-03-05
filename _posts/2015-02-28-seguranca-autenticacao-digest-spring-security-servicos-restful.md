@@ -8,6 +8,7 @@ category: segurança
 tagline: Spring Boot, Sprig Security e Spring Data Rest
 tags: [java, spring, spring-boot, spring-security, spring-data-rest, autenticação, digest, segurança, restful, web-services]
 keywords: java, spring, spring-boot, spring-security, spring-data-rest, autenticação, digest, segurança, restful, web-services
+comments: true
 ---
 
 ### Autenticação Digest

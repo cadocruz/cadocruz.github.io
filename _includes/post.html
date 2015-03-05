@@ -97,7 +97,7 @@
         <p class="author-bio">{{site.author.bio}}</p>
       </section>
 -->      
-    </div>
+	    </div>
 
     <div class="clearfix"></div>
 
@@ -115,10 +115,14 @@
 		</ul>
 
 		<hr>
+
+	{% if page.comments %}
+		{% include comments.html %}
+	{% endif %}
+		
 	</div>
-	
+
 	<div class="col-sm-2 sidebar-2">
-	
 	</div>
 </article>
 <div class="clearfix"></div>
