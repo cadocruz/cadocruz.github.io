@@ -258,7 +258,7 @@ Caso queira criar Services (para sua regra de negócio) o `JHipster` também tem
 
 #### Conclusão
 
-Apesar de ser um projeto novo, o [`JHipster`](http://jhipster.github.io) possui várias funcionalidades interessantes que facilitam a criação de web-apps usando Spring Boot e AngularJS. 
+Apesar de ser um projeto novo, o [`JHipster`](http://jhipster.github.io) possui várias funcionalidades interessantes que facilitam a criação de Web Apps usando Spring Boot e AngularJS. 
 
  >Enquanto eu escrevia este post, saiu a nova versão (2.5.2) do JHipster, com várias correções de bugs, confira o [Release notes](http://jhipster.github.io/2015/03/06/jhipster-release-2.5.2.html) 
 
