@@ -17,7 +17,7 @@ comments: true
 
 Hoje vou falar um pouco do [JHipster](http://jhipster.github.io) ou "Java Hipster" (como os criadores costumam chamar), é um gerador do [Yeoman](http://yeoman.io/) para criação de aplicações modernas em Java, com Spring Boot e AngularJS. Ele possibilita a utilização de tecnologias como Spring Boot, Spring MVC REST, JPA, segurança com Spring Security e bancos de dados como MySQL, PostgreSQL, MongoDB e Cassandra, entre outras.
 
-Em pouco tempo, o JHipster vem se tornando muito popular no Github, e tem sido destaque de revistas online como [InfoQ](http://www.infoq.com/news/2015/01/jhipster-2.0), Infoworld e SD Times, e também em conferêcias em Paris, Londres, Montreal, Omaha, Taipei , Richmond e Frankfurt.
+Em pouco tempo, o JHipster vem se tornando muito popular no Github, e tem sido destaque de revistas online como [InfoQ](http://www.infoq.com/news/2015/01/jhipster-2.0), Infoworld e SD Times, e também em conferências em Paris, Londres, Montreal, Omaha, Taipei , Richmond e Frankfurt.
 
 #### Instalação
 
@@ -31,7 +31,7 @@ Vamos lá, para instalar o JHipster você precisa do Java instalado, Git e Node.
 
 #### Criando um projeto
 
-Crie um diretório onde ficará o projeto, e  dentro do diretório que você acabou de criar rode o comando `yo jhipster`.
+Crie um diretório onde ficará o projeto, e dentro do diretório que você acabou de criar, digite o comando `yo jhipster`.
 
 a saída do comando é igual a abaixo:
 
