@@ -204,7 +204,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 Algumas considerações:
 :	Toda requisição para /api deve ser autenticada
 :	Desabilitamos o HTTP Session.
-:	Desabilitamos a proteção contra CSRF (Cross-site Request Forgery) pois como não estamos estamos usando Sessão.
+:	Como não estamos usando Sessão, desabilitamos a proteção contra CSRF (Cross-site Request Forgery).
 
 No método **_digestEntryPoint()_** configuramos nossa chave privada, o tempo de expiração do nonce em segundos (o valor padrão é 300 segundos) e o nosso realm. Esses são parâmetros obrigatórios.
 
