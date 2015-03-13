@@ -204,8 +204,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 Algumas considerações:
 :	Toda requisição para /api deve ser autenticada
 :	Desabilitamos o HTTP Session.
-:	Desabilitamos a proteção contra CSRF (Cross-site Request Forgery) para simplificar o desenvolvimento, 
-mas você pode ler mais sobre proteção CSRF [aqui](http://docs.spring.io/spring-security/site/docs/3.2.5.RELEASE/reference/htmlsingle/#csrf).
+:	Desabilitamos a proteção contra CSRF (Cross-site Request Forgery) pois como não estamos estamos usando Sessão.
 
 No método **_digestEntryPoint()_** configuramos nossa chave privada, o tempo de expiração do nonce em segundos (o valor padrão é 300 segundos) e o nosso realm. Esses são parâmetros obrigatórios.
 
