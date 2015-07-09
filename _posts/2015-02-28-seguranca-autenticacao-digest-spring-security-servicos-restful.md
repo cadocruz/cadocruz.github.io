@@ -9,6 +9,7 @@ tagline: Spring Boot, Sprig Security e Spring Data Rest
 tags: [java, spring, spring-boot, spring-security, spring-data-rest, autenticação, digest, segurança, restful, web-services]
 keywords: java, spring, spring-boot, spring-security, spring-data-rest, autenticação, digest, segurança, restful, web-services
 comments: true
+fullview: true
 ---
 
 ### Autenticação Digest
@@ -204,7 +205,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 Algumas considerações:
 :	Toda requisição para /api deve ser autenticada
 :	Desabilitamos o HTTP Session.
-:	Como não estamos usando Sessão, desabilitamos a proteção contra CSRF (Cross-site Request Forgery).
+:	Desabilitamos a proteção contra CSRF (Cross-site Request Forgery) para simplificar o desenvolvimento, 
+mas você pode ler mais sobre proteção CSRF [aqui](http://docs.spring.io/spring-security/site/docs/3.2.5.RELEASE/reference/htmlsingle/#csrf).
 
 No método **_digestEntryPoint()_** configuramos nossa chave privada, o tempo de expiração do nonce em segundos (o valor padrão é 300 segundos) e o nosso realm. Esses são parâmetros obrigatórios.
 

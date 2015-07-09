@@ -7,6 +7,7 @@ tagline: Oracle ADF e JDeveloper
 tags: [oracle, java, jdeveloper, auto-binding, adf]
 keywords: java, adf, jdeveloper, auto binding, automatic component binding, oracle
 comments: true
+fullview: true
 ---
 
 

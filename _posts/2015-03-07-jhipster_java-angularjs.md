@@ -7,6 +7,7 @@ tagline:
 tags: [jhipster, yeoman, angularjs, java, spring, spring-boot, spring-security, spring-data-rest, restful, web-app]
 keywords: jhipster, angularjs, java, spring, spring-boot, spring-security, spring-data-rest, restful, web apps
 comments: true
+fullview: true
 ---
 
 ![JHipster](https://jhipster.github.io/images/logo-jhipster-drink-coffee.png "JHipster")
