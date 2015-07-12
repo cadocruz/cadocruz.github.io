@@ -39,7 +39,7 @@ Criei um método `extractTemplate(InputStream stream, Map<String, String> proper
 
 {% gist cadocruz/0dbe40c1a9df3bdf1a60 %}
 
-Você pode baixar o código fonte do exemplo [aqui](https://github.com/cadocruz/exemplo-apache-poi). (https://github.com/cadocruz/exemplo-apache-poi)
+Você pode fazer o download do código fonte do exemplo [aqui](https://github.com/cadocruz/exemplo-apache-poi). (https://github.com/cadocruz/exemplo-apache-poi)
 
 Abaixo dois métodos extras, um para configurar o tamanho da tabela e outro para configurar um paragrafo.
 {% gist cadocruz/fe12e43e668ca84cfc61 %}
