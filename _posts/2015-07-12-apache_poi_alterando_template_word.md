@@ -20,6 +20,8 @@ error: cannot access Paragraph
   class file for org.apache.poi.wp.usermodel.Paragraph not found
 {% endhighlight %}
 
+Nas dependências do gradle adicione as seguintes bibliotecas:
+
 {% highlight bash %}compile group: 'org.apache.poi', name: 'poi', version: '3.12'
 compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.12'
 compile group: 'org.apache.poi', name: 'poi-scratchpad', version: '3.12'{% endhighlight %}
