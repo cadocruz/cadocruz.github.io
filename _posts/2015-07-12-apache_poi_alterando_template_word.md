@@ -10,8 +10,8 @@ comments: true
 fullview: true
 ---
 
-Uma tarefa muito comum, porém chata é a leitura de templates do Microsoft Word e a alteração de palavras chaves personalizadas por um valor em específico. Há diversas formas de se fazer isso, hoje vou mostrar uma dessas formas, utilizando o [Apache POI](https://poi.apache.org/).
-Este código foi testado com as versões 3.10-FINAL e 3.12 do Apache POI. Devido a um [Bug](https://bz.apache.org/bugzilla/show_bug.cgi?id=57963) na versão 3.12 é necessário adicionar a biblioteca `poi-scratchpad` as dependências, caso contrário você receberá o erro:
+Uma tarefa muito comum, porém chata é a leitura de **templates** do **Microsoft Word** e a alteração de palavras chaves personalizadas por um valor em específico. Há diversas formas de se fazer isso, hoje vou mostrar uma dessas formas, utilizando o [Apache POI](https://poi.apache.org/).
+Este código foi testado com as versões 3.10-FINAL e 3.12 do **Apache POI**. Devido a um [Bug](https://bz.apache.org/bugzilla/show_bug.cgi?id=57963) na versão 3.12 é necessário adicionar a biblioteca `poi-scratchpad` as dependências, caso contrário você receberá o erro:
 
 {% highlight bash %}
 error: cannot access Paragraph
@@ -29,7 +29,7 @@ compile group: 'org.apache.poi', name: 'poi-scratchpad', version: '3.12'{% endhi
 
 ### O modelo
 
-Vamos utilizar um modelo simples (o código do exemplo é para arquivos .docx), mas bastante comum. Um texto com uma tabela estática, para efeito de exemplo coloquei apenas duas variáveis no documento, `#valor_parcela#` e uma variável na tabela `#valor_total#`.
+Vamos utilizar um modelo simples (o código do exemplo é para arquivos **.docx**), mas bastante comum. Um texto com uma tabela estática, para efeito de exemplo coloquei apenas duas variáveis no documento, `#valor_parcela#` e uma variável na tabela `#valor_total#`.
 Veja a imagem do modelo, abaixo: 
 
 ![Modelo]({{ site.BASE_PATH }}/assets/media/modelo_documento.png "Modelo")

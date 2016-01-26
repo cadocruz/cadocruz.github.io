@@ -15,8 +15,8 @@ fullview: true
 ### Autenticação Digest
 
 Para utilizarmos a atenticação `Digest` devemos saber como ele funciona. Ao contrário 
-da autenticação Basic, a autenticação Digest não envia a senha em texto puro pelo meio.
-A Autenticação Digest é um mecanismo de autenticação simples desenvolvido originalmente para o protocolo HTTP 
+da autenticação Basic, a **autenticação** Digest não envia a senha em texto puro pelo meio.
+A Autenticação **Digest** é um mecanismo de autenticação simples desenvolvido originalmente para o protocolo HTTP 
 que está descrito na [RFC2671](http://tools.ietf.org/html/rfc2617).
 
 O cliente envia um requisição à um conteúdo, que requer autenticação, sem fornecer usuário e senha. Ex.:
@@ -41,7 +41,7 @@ Não tenho a pretensão de ser um guia definitivo sobre autenticação Digest,  
 enviado no HEADER. Esses parâmetros são usados na resposta ao desafio. *(Para mais informações sobre os 
 parâmetros acessar o site [RFC2671](http://tools.ietf.org/html/rfc2617) )*.  
 O `nonce` é uma string gerada pelo servidor toda vez que lança um desafio. Deve ser única, ou seja, não deve ser
-repetido. No Spring Security o `nonce` é gerado da seguinte maneira:
+repetido. No **Spring Security** o `nonce` é gerado da seguinte maneira:
 
 {% highlight java %}
 long expiryTime = System.currentTimeMillis() + (nonceValiditySeconds * 1000);
@@ -67,7 +67,7 @@ Com base nesses dados vamos à nossa aplicação.
 
 ### Spring Boot 
 
-O Spring Boot é um projeto com o conceito de "convenção sobre configuração", tornando a configuração do 
+O **Spring Boot** é um projeto com o conceito de "convenção sobre configuração", tornando a configuração do 
 ambiente muito mais rápida e simples.
 Você pode aprender um pouco mais sobre o Spring Boot na página de referência do próprio 
 [Spring Boot](http://docs.spring.io/spring-boot/docs/1.2.1.RELEASE/reference/htmlsingle/).
@@ -142,11 +142,11 @@ public class SpringSecurityDigestApplication {
 }
 {% endhighlight %}  
 
-Pronto, já temos nossa aplicação rodando com o mínimo de segurança.
+Pronto, já temos nossa aplicação rodando com o mínimo de **segurança**.
 
 ### Spring Security
 
-Diferentemente da autenticação `Basic`, na autenticação `Digest` o Spring Security não provê
+Diferentemente da autenticação `Basic`, na autenticação `Digest` o **Spring Security** não provê
 uma configuração "automática", então teremos que definir manualmente nossos _DigestAuthenticationEntryPoint_ 
 e _DigestAuthenticationFilter_.
 

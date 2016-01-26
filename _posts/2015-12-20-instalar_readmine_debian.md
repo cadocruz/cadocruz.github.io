@@ -10,7 +10,7 @@ comments: true
 fullview: true
 ---
 
-Uma dúvida comum de quem vai instalar o redmine pela primeira vez no Debian é, qual tutorial seguir, tendo em vista que na internet existem vários tutoriais. Mas qual usar? Pensando nisso, fiz um passo a passo rápido e facil, para instalar o Redmine no Debian.
+Uma dúvida comum de quem vai instalar o **Redmine** pela primeira vez no **Debian** é, qual tutorial seguir, tendo em vista que na internet existem vários tutoriais. Mas qual usar? Pensando nisso, fiz um passo a passo rápido e facil, para instalar o Redmine no Debian.
 
 Primeiro de tudo, vamos atualizar a lista de aplicativos no repositório com apt-get update.
 
