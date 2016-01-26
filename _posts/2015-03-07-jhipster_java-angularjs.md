@@ -16,15 +16,15 @@ fullview: true
 
 ![Spring Boot](http://jhipster.github.io/images/logo-spring-boot.png "Spring Boot")	![AngularJS](http://jhipster.github.io/images/logo-angularjs.png "AngularJS")
 
-Hoje vou falar um pouco do [JHipster](http://jhipster.github.io) ou "Java Hipster" (como os criadores costumam chamar), é um gerador do [Yeoman](http://yeoman.io/) para criação de aplicações modernas em Java, com Spring Boot e AngularJS. Ele possibilita a utilização de tecnologias como Spring Boot, Spring MVC REST, JPA, segurança com Spring Security e bancos de dados como MySQL, PostgreSQL, MongoDB e Cassandra, entre outras.
+Hoje vou falar um pouco do [JHipster](http://jhipster.github.io) ou "Java Hipster" (como os criadores costumam chamar), é um gerador do [Yeoman](http://yeoman.io/) para criação de aplicações modernas em Java, com Spring Boot e **AngularJS**. Ele possibilita a utilização de tecnologias como **Spring Boot**, **Spring MVC** REST, JPA, segurança com Spring Security e bancos de dados como MySQL, PostgreSQL, MongoDB e Cassandra, entre outras.
 
-Em pouco tempo, o JHipster vem se tornando muito popular no Github, e tem sido destaque de revistas online como [InfoQ](http://www.infoq.com/news/2015/01/jhipster-2.0), Infoworld e SD Times, e também em conferências em Paris, Londres, Montreal, Omaha, Taipei , Richmond e Frankfurt.
+Em pouco tempo, o **JHipster** vem se tornando muito popular no Github, e tem sido destaque de revistas online como [InfoQ](http://www.infoq.com/news/2015/01/jhipster-2.0), Infoworld e SD Times, e também em conferências em Paris, Londres, Montreal, Omaha, Taipei , Richmond e Frankfurt.
 
 #### Instalação
 
 Vamos lá, para instalar o JHipster você precisa do Java instalado, Git e Node.js (para usar o gerenciador de pacotes do node, npm).
 
-*	Instalar o Yeoman: `npm install -g yo`
+*	Instalar o **Yeoman**: `npm install -g yo`
 *	Instalar o Bower: `npm install -g bower`
 *	Instalar o Grunt: `npm install -g grunt-cli`, se preferir pode instalar o Gulp: `npm install -g gulp`.
 *	E finalmente instalar o JHipster: `npm install -g generator-jhipster`
@@ -100,7 +100,7 @@ A aplicação estará disponível em http://localhost:8080
 
 #### Internacionalização
 
-O JHipster possui suporte a vários idiomas, por padrão vem instalado apenas inglês e francês. Mas para instalarmos português é simples, digitamos: `yo jhipster:languages`, procuramos pressionando a seta para baixo ou para cima e selecionamos com a tecla de espaço "Portuguese (Brazilian)" 
+O **JHipster** possui suporte a vários idiomas, por padrão vem instalado apenas inglês e francês. Mas para instalarmos português é simples, digitamos: `yo jhipster:languages`, procuramos pressionando a seta para baixo ou para cima e selecionamos com a tecla de espaço "Portuguese (Brazilian)" 
 
 {% highlight bash %}
 Languages configuration is starting
