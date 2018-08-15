@@ -14,11 +14,11 @@ fullview: true
 
 ### Introdução ao JHipster: Spring Boot + AngularJS
 
-![Spring Boot](http://jhipster.github.io/img/logo-spring-boot.png "Spring Boot")	![AngularJS](http://jhipster.github.io/img/logo-angularjs.png "AngularJS")
+![Spring Boot](https://jhipster.github.io/img/logo-spring-boot.png "Spring Boot")	![AngularJS](https://jhipster.github.io/img/logo-angularjs.png "AngularJS")
 
-Hoje vou falar um pouco do [JHipster](http://jhipster.github.io) ou "Java Hipster" (como os criadores costumam chamar), é um gerador do [Yeoman](http://yeoman.io/) para criação de aplicações modernas em Java, com Spring Boot e **AngularJS**. Ele possibilita a utilização de tecnologias como **Spring Boot**, **Spring MVC** REST, JPA, segurança com Spring Security e bancos de dados como MySQL, PostgreSQL, MongoDB e Cassandra, entre outras.
+Hoje vou falar um pouco do [JHipster](https://jhipster.github.io) ou "Java Hipster" (como os criadores costumam chamar), é um gerador do [Yeoman](https://yeoman.io/) para criação de aplicações modernas em Java, com Spring Boot e **AngularJS**. Ele possibilita a utilização de tecnologias como **Spring Boot**, **Spring MVC** REST, JPA, segurança com Spring Security e bancos de dados como MySQL, PostgreSQL, MongoDB e Cassandra, entre outras.
 
-Em pouco tempo, o **JHipster** vem se tornando muito popular no Github, e tem sido destaque de revistas online como [InfoQ](http://www.infoq.com/news/2015/01/jhipster-2.0), Infoworld e SD Times, e também em conferências em Paris, Londres, Montreal, Omaha, Taipei , Richmond e Frankfurt.
+Em pouco tempo, o **JHipster** vem se tornando muito popular no Github, e tem sido destaque de revistas online como [InfoQ](https://www.infoq.com/news/2015/01/jhipster-2.0), Infoworld e SD Times, e também em conferências em Paris, Londres, Montreal, Omaha, Taipei , Richmond e Frankfurt.
 
 #### Instalação
 
@@ -93,10 +93,10 @@ A aplicação estará disponível em http://localhost:8080
 ![Página inicial]({{ site.BASE_PATH }}/assets/media/jhipster_welcome_page.png "Página inicial")
 
 #### Monitoramento
-![Monitoramento](http://jhipster.github.io/images/screenshot_2.png "Monitoramento")
+![Monitoramento](https://jhipster.github.io/images/screenshot_2.png "Monitoramento")
 
 #### Gerenciadmento de logs
-![Gerenciadmento de logs](http://jhipster.github.io/images/screenshot_4.png "Gerenciadmento de logs")  
+![Gerenciadmento de logs](https://jhipster.github.io/images/screenshot_4.png "Gerenciadmento de logs")  
 
 #### Internacionalização
 
@@ -259,8 +259,8 @@ Caso queira criar Services (para sua regra de negócio) o `JHipster` também tem
 
 #### Conclusão
 
-Apesar de ser um projeto novo, o [`JHipster`](http://jhipster.github.io) possui várias funcionalidades interessantes que facilitam a criação de Web Apps usando Spring Boot e AngularJS. 
+Apesar de ser um projeto novo, o [`JHipster`](https://jhipster.github.io) possui várias funcionalidades interessantes que facilitam a criação de Web Apps usando Spring Boot e AngularJS. 
 
- >Enquanto eu escrevia este post, saiu a nova versão (2.5.2) do JHipster, com várias correções de bugs, confira o [Release notes](http://jhipster.github.io/2015/03/06/jhipster-release-2.5.2.html) 
+ >Enquanto eu escrevia este post, saiu a nova versão (2.5.2) do JHipster, com várias correções de bugs, confira o [Release notes](https://jhipster.github.io/2015/03/06/jhipster-release-2.5.2.html) 
 
 
