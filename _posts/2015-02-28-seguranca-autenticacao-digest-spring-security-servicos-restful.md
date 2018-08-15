@@ -17,7 +17,7 @@ fullview: true
 Para utilizarmos a atenticação `Digest` devemos saber como ele funciona. Ao contrário 
 da autenticação Basic, a **autenticação** Digest não envia a senha em texto puro pelo meio.
 A Autenticação **Digest** é um mecanismo de autenticação simples desenvolvido originalmente para o protocolo HTTP 
-que está descrito na [RFC2671](http://tools.ietf.org/html/rfc2617).
+que está descrito na [RFC2671](https://tools.ietf.org/html/rfc2617).
 
 O cliente envia um requisição à um conteúdo, que requer autenticação, sem fornecer usuário e senha. Ex.:
 
@@ -39,7 +39,7 @@ Date: Sun, 22 Feb 2015 23:53:01 GMT
 
 Não tenho a pretensão de ser um guia definitivo sobre autenticação Digest,  por isso não vou explicar cada parâmetro 
 enviado no HEADER. Esses parâmetros são usados na resposta ao desafio. *(Para mais informações sobre os 
-parâmetros acessar o site [RFC2671](http://tools.ietf.org/html/rfc2617) )*.  
+parâmetros acessar o site [RFC2671](https://tools.ietf.org/html/rfc2617) )*.  
 O `nonce` é uma string gerada pelo servidor toda vez que lança um desafio. Deve ser única, ou seja, não deve ser
 repetido. No **Spring Security** o `nonce` é gerado da seguinte maneira:
 
@@ -70,8 +70,8 @@ Com base nesses dados vamos à nossa aplicação.
 O **Spring Boot** é um projeto com o conceito de "convenção sobre configuração", tornando a configuração do 
 ambiente muito mais rápida e simples.
 Você pode aprender um pouco mais sobre o Spring Boot na página de referência do próprio 
-[Spring Boot](http://docs.spring.io/spring-boot/docs/1.2.1.RELEASE/reference/htmlsingle/).
-Um jeito simples de criar um projeto do Spring Boot é pelo site [Spring Initializr](http://start.spring.io/), 
+[Spring Boot](https://docs.spring.io/spring-boot/docs/1.2.1.RELEASE/reference/htmlsingle/).
+Um jeito simples de criar um projeto do Spring Boot é pelo site [Spring Initializr](https://start.spring.io/), 
 é só você configurar como será sua aplicação e as depêndencias dela, e gerar o projeto.
 Estou usando o Gradle ao invés do Maven, mas você pode usar o maven se quiser.
 O arquivo `build.gradle` da nossa aplicação ficou assim:
@@ -206,7 +206,7 @@ Algumas considerações:
 :	Toda requisição para /api deve ser autenticada
 :	Desabilitamos o HTTP Session.
 :	Desabilitamos a proteção contra CSRF (Cross-site Request Forgery) para simplificar o desenvolvimento, 
-mas você pode ler mais sobre proteção CSRF [aqui](http://docs.spring.io/spring-security/site/docs/3.2.5.RELEASE/reference/htmlsingle/#csrf).
+mas você pode ler mais sobre proteção CSRF [aqui](https://docs.spring.io/spring-security/site/docs/3.2.5.RELEASE/reference/htmlsingle/#csrf).
 
 No método **_digestEntryPoint()_** configuramos nossa chave privada, o tempo de expiração do nonce em segundos (o valor padrão é 300 segundos) e o nosso realm. Esses são parâmetros obrigatórios.
 
@@ -331,16 +331,16 @@ Agora que já temos nosso serviço RESTful funcionando, vamos criar nossa págin
 
 Nada de mais na nossa página, um campo para usuário e outro para senha. O serviço "sujo" deve ser feito por um 
 javascript fazendo requisição por `AJAX`. Nós mesmo podemos criar nosso javascript, mas com certeza alguém já fez.
-Pesquisando "ajax digest auth" no google, o terceiro resultado é do [Marcin Michalski 's Weblog](http://marcin-michalski.pl/2012/11/01/javascript-digest-authentication-restful-webservice-spring-security-javascript-ajax/), pegarei este como exemplo:
+Pesquisando "ajax digest auth" no google, o terceiro resultado é do [Marcin Michalski 's Weblog](https://marcin-michalski.pl/2012/11/01/javascript-digest-authentication-restful-webservice-spring-security-javascript-ajax/), pegarei este como exemplo:
 
 {% highlight javascript %}
 /*
  * A JavaScript implementation of the Digest Authentication
  * Digest Authentication, as defined in RFC 2617.
- * Version 1.0 Copyright (C) Maricn Michalski (http://marcin-michalski.pl) 
+ * Version 1.0 Copyright (C) Maricn Michalski (https://marcin-michalski.pl) 
  * Distributed under the BSD License
  * 
- * site: http://arrowgroup.eu
+ * site: https://arrowgroup.eu
  */
  
 $.Class("pl.arrowgroup.DigestAuthentication", {
@@ -428,7 +428,7 @@ $.Class("pl.arrowgroup.HeaderParamsParser",{
 });
 {% endhighlight %}
 
-Ele tem como dependências o [JQuery](http://jquery.com/), [JQuery.Class](http://bitovi.com/blog/2010/06/a-simple-powerful-lightweight-class-for-jquery.html) e [MD5](http://pajhome.org.uk/crypt/md5).
+Ele tem como dependências o [JQuery](https://jquery.com/), [JQuery.Class](https://bitovi.com/blog/2010/06/a-simple-powerful-lightweight-class-for-jquery.html) e [MD5](https://pajhome.org.uk/crypt/md5).
 
 Vamos ver como ficou nosso index.html
 
@@ -527,7 +527,7 @@ Como na imagem abaixo:
 
 
 Como contornar isso?
-No mesmo post do [Marcin Michalski 's Weblog](http://marcin-michalski.pl/2012/11/01/javascript-digest-authentication-restful-webservice-spring-security-javascript-ajax/) ele da uma solução para isso não ocorrer. Estender a classe DigestAuthenticationEntryPoint, o que ele faz é alterar o código de status **401 Unauthorized** para **403 Forbidden**. 
+No mesmo post do [Marcin Michalski 's Weblog](https://marcin-michalski.pl/2012/11/01/javascript-digest-authentication-restful-webservice-spring-security-javascript-ajax/) ele da uma solução para isso não ocorrer. Estender a classe DigestAuthenticationEntryPoint, o que ele faz é alterar o código de status **401 Unauthorized** para **403 Forbidden**. 
 
 {% highlight java %} 
 public class AjaxDigestAuthenticationEntryPoint extends DigestAuthenticationEntryPoint{
