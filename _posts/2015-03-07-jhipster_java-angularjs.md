@@ -10,11 +10,8 @@ comments: true
 fullview: true
 ---
 
-![JHipster](https://jhipster.github.io/img/logo-jhipster-drink-coffee.png "JHipster")
-
 ### Introdução ao JHipster: Spring Boot + AngularJS
 
-![Spring Boot](https://jhipster.github.io/img/logo-spring-boot.png "Spring Boot")	![AngularJS](https://jhipster.github.io/img/logo-angularjs.png "AngularJS")
 
 Hoje vou falar um pouco do [JHipster](https://jhipster.github.io) ou "Java Hipster" (como os criadores costumam chamar), é um gerador do [Yeoman](https://yeoman.io/) para criação de aplicações modernas em Java, com Spring Boot e **AngularJS**. Ele possibilita a utilização de tecnologias como **Spring Boot**, **Spring MVC** REST, JPA, segurança com Spring Security e bancos de dados como MySQL, PostgreSQL, MongoDB e Cassandra, entre outras.
 
