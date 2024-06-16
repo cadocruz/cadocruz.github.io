@@ -1,4 +1,4 @@
 cadocruz blog - jekyll
 =======================
 
-Cado Cruz blog - [www.cadocruz.com.br](https://www.cadocruz.com.br)
+Cado Cruz blog - [cadocruz.github.io](https://cadocruz.github.io)
